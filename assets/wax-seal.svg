@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" fill="none">
+  <defs>
+    <linearGradient id="wax" x1="42" y1="28" x2="172" y2="202" gradientUnits="userSpaceOnUse"><stop stop-color="#e3c68e"/><stop offset=".26" stop-color="#c4a16a"/><stop offset=".65" stop-color="#b18b52"/><stop offset="1" stop-color="#95703d"/></linearGradient>
+    <radialGradient id="rim" cx=".34" cy=".23" r=".83"><stop offset=".55" stop-color="#c2a06f"/><stop offset=".74" stop-color="#d8bb8c"/><stop offset=".88" stop-color="#c09d6c"/><stop offset="1" stop-color="#ad8856"/></radialGradient>
+    <radialGradient id="impression" cx=".44" cy=".56" r=".57"><stop stop-color="#caae80"/><stop offset=".76" stop-color="#c7a87a"/><stop offset=".92" stop-color="#bb996a"/><stop offset="1" stop-color="#967546"/></radialGradient>
+    <linearGradient id="rimlight" x1="49" y1="28" x2="160" y2="182" gradientUnits="userSpaceOnUse"><stop stop-color="#f0d9ab"/><stop offset=".44" stop-color="#d9b77e"/><stop offset=".76" stop-color="#9a743e"/><stop offset="1" stop-color="#d6b17a"/></linearGradient>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".54" numOctaves="3" stitchTiles="stitch" seed="7"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".32"/></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"/></filter>
+    <filter id="mottle"><feTurbulence type="fractalNoise" baseFrequency=".047" numOctaves="3" seed="21"/><feColorMatrix values="0 0 0 0 .51 0 0 0 0 .38 0 0 0 0 .22 0 0 0 .16 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="1.15"/></filter>
+    <path id="outline" d="M111 12C125 8 136 16 146 19 156 21 160 31 170 36 181 40 183 53 190 62 198 71 195 82 200 94 205 104 199 117 201 127 201 140 191 147 187 158 183 171 169 175 161 184 152 194 139 191 127 197 115 203 104 196 91 198 78 201 71 191 60 187 49 184 44 171 34 165 24 157 27 142 19 132 14 122 18 111 15 101 10 86 21 77 23 65 26 52 39 48 44 37 50 27 64 27 74 20 83 13 98 17 111 12Z"/>
+    <clipPath id="clip"><use href="#outline"/></clipPath>
+  </defs>
+  <use href="#outline" transform="translate(0 2)" fill="#705129" opacity=".6"/>
+  <use href="#outline" fill="url(#wax)" stroke="#a3814d" stroke-width="1.2"/>
+  <path d="M112 18C136 16 151 26 170 43 192 66 194 87 195 112 195 139 180 162 160 180 137 196 115 192 91 193 65 191 46 174 31 153 17 131 21 111 20 91 23 65 35 47 54 32 72 22 91 19 112 18Z" fill="url(#rim)"/>
+  <path d="M40 55C53 32 81 22 106 21M25 96C24 119 30 138 38 148M151 184C165 177 177 165 183 153" stroke="#efdaa6" stroke-opacity=".48" stroke-width="2.5" stroke-linecap="round" filter="url(#soft)"/>
+  <ellipse cx="110" cy="108" rx="74" ry="75" fill="#7a5a2c" opacity=".36" filter="url(#soft)"/>
+  <path d="M112 32C153 31 182 65 183 108 183 151 150 183 108 183 67 182 37 151 36 110 35 67 67 34 112 32Z" fill="url(#rimlight)"/>
+  <path d="M111 40C148 39 176 69 175 108 175 148 146 176 109 176 72 175 43 146 44 110 43 72 70 41 111 40Z" fill="url(#impression)"/>
+  <path d="M46 110C45 149 75 175 110 175 143 175 166 153 173 128" stroke="#e7c892" stroke-width="1.3" opacity=".68"/>
+  <path d="M47 95C53 63 77 45 107 44 137 41 160 59 170 84" stroke="#81612f" stroke-width="1.1" opacity=".45"/>
+  <g clip-path="url(#clip)"><rect x="12" y="10" width="195" height="195" fill="#b79763" filter="url(#grain)" opacity=".52"/></g>
+  <g clip-path="url(#clip)"><rect x="12" y="10" width="195" height="195" fill="#b79763" filter="url(#mottle)" opacity=".62"/></g>
+  <path d="m41 146 3 7m118-112 4 5M85 187l5 1M26 83l1-5" stroke="#a57d42" stroke-width="1" opacity=".5" stroke-linecap="round"/>
+</svg>

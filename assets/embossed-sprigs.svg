@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="520" viewBox="0 0 420 520" fill="none">
+  <defs>
+    <linearGradient id="foil" x1="0" y1="0" x2="110" y2="150" gradientUnits="userSpaceOnUse"><stop stop-color="#c9c39a"/><stop offset=".4" stop-color="#9f9f6d"/><stop offset=".72" stop-color="#b8b489"/><stop offset="1" stop-color="#8f9665"/></linearGradient>
+    <filter id="emboss" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="1.1" dy="1.8" stdDeviation=".65" flood-color="#334028" flood-opacity=".6"/>
+      <feDropShadow dx="-.65" dy="-1" stdDeviation=".3" flood-color="#e2ddad" flood-opacity=".75"/>
+    </filter>
+    <g id="sprig" stroke="url(#foil)" stroke-linecap="round">
+      <path d="M53 157C57 127 43 91 59 48 65 31 70 19 71 7" stroke-width="2"/>
+      <path d="M54 132C38 122 34 109 29 91M52 111C68 96 81 93 88 76M54 81C40 70 35 55 30 41M61 46C77 34 90 33 99 19" stroke-width="1.2"/>
+      <path d="M46 124C19 124 18 111 7 102 29 99 41 106 46 124ZM37 111C20 99 22 85 16 72 36 81 42 93 37 111ZM51 139C73 140 77 127 91 121 71 114 58 122 51 139ZM59 106C80 110 91 95 103 92 87 82 69 89 59 106ZM75 92C73 71 87 61 88 50 101 65 89 83 75 92ZM52 77C29 73 27 61 12 54 29 48 47 55 52 77ZM40 62C39 45 24 29 30 19 47 29 51 44 40 62ZM63 45C82 48 92 33 106 32 96 22 77 29 63 45ZM69 25C58 12 61 3 65-7 79 1 78 12 69 25Z" fill="url(#foil)" fill-opacity=".38" stroke-width=".9"/>
+      <path d="m14 105 26 15m-21-40 17 24m45 20-25 11m40-39-28 7m18-45-9 25M18 55l28 17M32 28l9 29m57-23-27 9" stroke-width=".65" opacity=".8"/>
+    </g>
+    <g id="small-sprig" stroke="url(#foil)" stroke-linecap="round">
+      <path d="M43 93C35 69 48 33 62 9M42 64C21 54 20 44 10 30M49 41C65 35 73 26 81 14" stroke-width="1.5"/>
+      <path d="M43 78C59 79 70 68 81 64 64 54 49 61 43 78ZM39 57C21 58 15 45 2 43 17 33 32 39 39 57ZM31 46C20 30 25 22 19 13 34 15 41 30 31 46ZM51 40C65 46 76 35 86 30 72 21 58 27 51 40ZM56 24C43 14 49 2 48-8 64 0 65 11 56 24Z" fill="url(#foil)" fill-opacity=".32" stroke-width=".9"/>
+    </g>
+  </defs>
+  <g filter="url(#emboss)" opacity=".83">
+    <use href="#sprig" transform="translate(20 27) rotate(-23 55 80)"/>
+    <use href="#small-sprig" transform="translate(262 30) rotate(28 45 45)"/>
+    <use href="#sprig" transform="translate(222 207) rotate(19 55 80)"/>
+    <use href="#small-sprig" transform="translate(35 290) rotate(-15 45 45)"/>
+    <use href="#small-sprig" transform="translate(96 442) rotate(45 45 45)"/>
+    <use href="#small-sprig" transform="translate(344 420) rotate(-35 45 45)"/>
+  </g>
+</svg>

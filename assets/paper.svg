@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640">
+  <defs>
+    <filter id="fibres">
+      <feTurbulence type="fractalNoise" baseFrequency=".42 .075" numOctaves="3" stitchTiles="stitch" seed="8"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncR type="linear" slope=".22" intercept=".63"/>
+        <feFuncG type="linear" slope=".22" intercept=".62"/>
+        <feFuncB type="linear" slope=".22" intercept=".54"/>
+        <feFuncA type="linear" slope=".55"/>
+      </feComponentTransfer>
+    </filter>
+    <filter id="wash">
+      <feTurbulence type="fractalNoise" baseFrequency=".009 .013" numOctaves="3" stitchTiles="stitch" seed="12"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncR type="linear" slope=".4" intercept=".49"/>
+        <feFuncG type="linear" slope=".4" intercept=".52"/>
+        <feFuncB type="linear" slope=".3" intercept=".43"/>
+        <feFuncA type="linear" slope=".24"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+  <path fill="#e8e7d4" opacity=".16" d="M0 0h640v640H0z"/>
+  <path fill="#d7d6bd" filter="url(#wash)" d="M0 0h640v640H0z"/>
+  <path fill="#d7d6bd" filter="url(#fibres)" d="M0 0h640v640H0z"/>
+</svg>

@@ -1,0 +1,15 @@
+{
+  "name": "afnan-and-zainab-invitation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An interactive, locally hosted Walima invitation.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "playwright test",
+    "check": "node --check app.js && node --check server.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
+  }
+}
